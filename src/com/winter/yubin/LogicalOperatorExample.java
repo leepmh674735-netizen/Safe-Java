@@ -6,15 +6,16 @@ public class LogicalOperatorExample {
 		//int charCode = 'a';
 		//int charCode = '5';
 		
-		if (65<=charCode) & (charCode<=90) ) {
+		// 💡 수정: 괄호 쌍이 맞지 않던 부분을 올바르게 수정 (전체 조건식을 괄호로 감싸줌)
+		if ( (65 <= charCode) & (charCode <= 90) ) {
 			System.out.println("대문자이군요.");
 		}
 		
-		if( (97<=charCode) && (charCode<=122) ) {
+		if ( (97 <= charCode) && (charCode <= 122) ) {
 			System.out.println("소문자이군요.");
 		}
 		
-		if( (48<=charCode) && (charCode<=57)  ) {
+		if ( (48 <= charCode) && (charCode <= 57) ) {
 			System.out.println("0~9 숫자이군요.");
 		}
 		
@@ -23,12 +24,12 @@ public class LogicalOperatorExample {
 		int value = 6;
 		//int value = 7;
 		
-		if( ( value%2==0) | (value%3==0) ) {
-			System.out.println("2 또는 3의 배수이궁요.");
+		if ( (value % 2 == 0) | (value % 3 == 0) ) {
+			System.out.println("2 또는 3의 배수이군요."); // 💡 오타 수정: 배수이궁요 -> 배수이군요
 		}
 		
-		boolean result = (value%2==0) || (value%3==0);
-		if( !result ) {
+		boolean result = (value % 2 == 0) || (value % 3 == 0);
+		if ( !result ) {
 			System.out.println("2 또는 3의 배수가 아니군요");
 		}
 	}

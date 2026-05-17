@@ -45,7 +45,7 @@ public class ArrayCreateByNewExample {
 		System.out.println();
 		//배열 항목 값 변경
 		arr3[0] = "1월";
-		arr3[1] = " 2월";
+		arr3[1] = "2월";
 		arr3[2] = "3월";
 		//배열 항목의 변경값 출력
 		for(int i=0; i<3; i++) {
